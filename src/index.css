@@ -1,0 +1,108 @@
+/* =========================================================
+   FONTS
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap');
+
+
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   DESIGN TOKENS
+========================================================= */
+
+:root {
+
+  /* Surfaces */
+  --paper: #F5F8F7;
+  --surface: #FFFFFF;
+  --surface-sunken: #EEF3F2;
+
+  /* Ink (text) */
+  --ink-900: #0E2530;
+  --ink-700: #2E4B54;
+  --ink-500: #62808A;
+  --ink-300: #9DB3B9;
+
+  /* Lines */
+  --line: #DCE6E3;
+  --line-strong: #C3D3CF;
+
+  /* Brand blue — matched to the Sparish logo */
+  --teal-900: #0B2E63;
+  --teal-700: #144A93;
+  --teal-600: #1868C7;
+  --teal-500: #2E9BE6;
+  --teal-100: #E3F1FC;
+
+  /* Light accent blue (eyebrow text, tick rule on dark panel) */
+  --accent-200: #8FCBF7;
+
+  /* Status — kept in the blue family, no green */
+  --success-600: #1591E0;
+  --success-100: #E1F4FD;
+  --danger-600: #C0433F;
+  --danger-100: #FBEAE9;
+
+  /* Type */
+  --font-display: 'Space Grotesk', 'Inter', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', Menlo, Consolas, monospace;
+
+}
+
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+html,
+body,
+#root {
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+html {
+  background: var(--paper);
+}
+
+body {
+  margin: 0;
+
+  min-width: 100%;
+
+  font-family: var(--font-body);
+
+  background: var(--paper);
+  color: var(--ink-900);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* =========================================================
+   ROOT ELEMENT
+========================================================= */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
